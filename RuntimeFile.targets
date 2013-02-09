@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml" />
+    <AvailableItemName Include="RuntimeFile"><Targets>CopyRuntimeToOutDir</Targets></AvailableItemName>
+  </ItemGroup>
+  <Target Name="CopyRuntimeToOutDir" Inputs="@(RuntimeFile)" Outputs="@(RuntimeFile->'$(OutDir)%(Filename)%(Extension)')" AfterTargets="Build">
+	  <Message Text="Copying %(RuntimeFile.Identity) ..." Importance="high"/>
+	  <Copy SourceFiles="@(RuntimeFile)" DestinationFolder="$(OutDir)" ContinueOnError="false" />
+  </Target>
+</Project>

@@ -99,7 +99,12 @@
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <RuntimeFile Include="3rdparty\zbar\libiconv-2.dll" />
+    <RuntimeFile Include="3rdparty\zbar\libzbar-0.dll" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="RuntimeFile.targets" />
   </ImportGroup>
 </Project>

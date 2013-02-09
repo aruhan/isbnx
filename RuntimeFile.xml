@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties">
+	<ItemType Name="RuntimeFile" DisplayName="Runtime File (Copy to OutDir)" />
+	<FileExtension Name=".dll" ContentType="RuntimeFile" />
+        <ContentType Name="RuntimeFile" DisplayName="Runtime File (Copy to OutDir)" ItemType="RuntimeFile" />
+</ProjectSchemaDefinitions>

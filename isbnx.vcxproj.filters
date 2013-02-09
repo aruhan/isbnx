@@ -33,4 +33,8 @@
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <RuntimeFile Include="3rdparty\zbar\libiconv-2.dll" />
+    <RuntimeFile Include="3rdparty\zbar\libzbar-0.dll" />
+  </ItemGroup>
 </Project>
