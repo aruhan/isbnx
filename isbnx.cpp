@@ -59,7 +59,7 @@ Result ReadISBN(const wchar_t* filepath)
 	WICRect rc = { 0, 0, width, height };
 	hr = source->CopyPixels(&rc, width, buf.size(), buf.data());
 
-	Image img(width, height, "GRAY", buf.data(), buf.size());
+	Image img(width, height, "Y800", buf.data(), buf.size());
 	ImageScanner scanner;
 	scanner.set_config(ZBAR_ISBN13, ZBAR_CFG_ENABLE, 1);
 	int scanRet = scanner.scan(img);
