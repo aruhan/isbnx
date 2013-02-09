@@ -9,3 +9,10 @@
 
 #include <stdio.h>
 #include <windows.h>
+#include <comdef.h>
+#include <wincodec.h>
+#include <zbar.h>
+#include <vector>
+#include <string>
+
+#pragma comment(lib, "libzbar-0.lib")

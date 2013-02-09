@@ -7,4 +7,4 @@ ipch/
 *.sdf
 *.opensdf
 .obj/
-
+bin/
